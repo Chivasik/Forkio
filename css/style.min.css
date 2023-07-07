@@ -237,64 +237,56 @@ ul {
     width: 90%;
     justify-content: center;
     align-items: flex-start;
-    animation: fadeIn 1s;
   }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  .header_menu li::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 53px;
+    background: #8d81ac;
+    top: 50%;
+    left: 1px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.3s ease;
   }
-}
-.header_menu li::before {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 53px;
-  background: #8d81ac;
-  top: 50%;
-  left: 1px;
-  transform: translateY(-50%);
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-.header_menu li {
-  position: relative;
-  margin: 0;
-  border-bottom: 3px solid #3b3b3b;
-  width: 100%;
-}
-.header_menu li a {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 26px;
-  color: #ffffff;
-  padding: 29px 36px;
-  display: inline-block;
-  transition: all 0.3s ease;
-}
-.header_menu li:active a {
-  color: #8d81ac;
-  padding-left: 40px;
-}
-.header_menu li:active::before {
-  opacity: 1;
-}
-.header_menu li.active::before {
-  opacity: 1;
-}
-.header_menu li.active a {
-  color: #8d81ac;
-  padding-left: 40px;
+  .header_menu li {
+    position: relative;
+    margin: 0;
+    border-bottom: 3px solid #3b3b3b;
+    width: 100%;
+  }
+  .header_menu li a {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: #ffffff;
+    padding: 29px 36px;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  .header_menu li:active a {
+    color: #8d81ac;
+    padding-left: 40px;
+  }
+  .header_menu li:active::before {
+    opacity: 1;
+  }
+  .header_menu li.active::before {
+    opacity: 1;
+  }
+  .header_menu li.active a {
+    color: #8d81ac;
+    padding-left: 40px;
+  }
 }
 
 .header.open .header_menu {
   display: flex;
   opacity: 1;
+  transition: all 0.5s ease-in-out;
 }
 
 .header_offer {
