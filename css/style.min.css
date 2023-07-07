@@ -55,7 +55,7 @@ table {
 }
 
 .header {
-  background-image: url(/img/header/header.jpg);
+  background-image: url(../img/header/header.jpg);
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: top, center;
@@ -626,7 +626,7 @@ ul {
 }
 
 .about {
-  background: url(/img/main/about/testmonials.jpg), lightgray 50%/cover no-repeat;
+  background: url(../img/main/about/testmonials.jpg), lightgray 50%/cover no-repeat;
   background-size: cover;
   padding: 108px 96px 0;
   margin-bottom: -1px;
@@ -731,7 +731,7 @@ ul {
 }
 
 .fork-pricing {
-  background: url(/img/main/fork_pricing/Layer.jpg);
+  background: url(../img/main/fork_pricing/Layer.jpg);
   background-size: cover;
   padding: 108px 133px 67px;
 }
